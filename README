@@ -1,0 +1,11 @@
+meta-qt5-rpi-eglfs support to work qt5 with eglfs on RPi/RPi2.
+This layer is unofficial.
+
+This layer depends on:
+
+URI: git://github.com/meta-qt5/meta-qt5.git
+branch: master
+revision: HEAD
+
+Main layer maintainers:
+  Yusuke Mitsuki <mickey.happygolucky@gmail.com>
