@@ -15,7 +15,7 @@ If you want to use opencv depends on meta-oe.
 Otherwise you can mask a opencv in this layer as follows:
 
 In local.conf
-```xml
+```
 BBMASK = "meta-qt5-rpi-eglfs/recipes-support/opencv"
 ```
 
