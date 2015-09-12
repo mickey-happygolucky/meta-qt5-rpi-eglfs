@@ -12,7 +12,7 @@ diff -Narubp a/config.tests/unix/openvg/openvg.cpp b/config.tests/unix/openvg/op
 diff -Narubp a/mkspecs/linux-oe-g++/qmake.conf b/mkspecs/linux-oe-g++/qmake.conf
 --- a/mkspecs/linux-oe-g++/qmake.conf	2014-11-29 14:21:39.664299980 +0900
 +++ b/mkspecs/linux-oe-g++/qmake.conf	2014-11-30 00:31:18.878988997 +0900
-@@ -37,4 +37,13 @@ QMAKE_LINK_C_SHLIB = $(OE_QMAKE_LINK)
+@@ -37,4 +37,12 @@ QMAKE_LINK_C_SHLIB = $(OE_QMAKE_LINK)
  # for the SDK
  isEmpty(QMAKE_QT_CONFIG):QMAKE_QT_CONFIG = $(OE_QMAKE_QT_CONFIG)
  
@@ -22,7 +22,6 @@ diff -Narubp a/mkspecs/linux-oe-g++/qmake.conf b/mkspecs/linux-oe-g++/qmake.conf
 +
 +INCLUDEPATH += $$[QT_SYSROOT]/usr/include/interface/vmcs_host/linux
 +INCLUDEPATH += $$[QT_SYSROOT]/usr/include/interface/vcos/pthreads/
-+EGLFS_PLATFORM_HOOKS_SOURCES = $$PWD/../devices/linux-rasp-pi-g++/qeglfshooks_pi.cpp
 +EGLFS_PLATFORM_HOOKS_LIBS = -lbcm_host
 +
  load(qt_config)

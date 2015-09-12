@@ -19,5 +19,14 @@ In local.conf
 BBMASK = "meta-qt5-rpi-eglfs/recipes-support/opencv"
 ```
 
+If you fail bitbake with userland.bb, 
+Could you try to use vc-graphics-hardfp instead of userland as follows:
+
+In local.conf
+```
+PREFERRED_PROVIDER_virtual/egl = "vc-graphics-hardfp"
+PREFERRED_PROVIDER_virtual/libgles2 = "vc-graphics-hardfp"
+```
+
 Main layer maintainers:
   Yusuke Mitsuki <mickey.happygolucky@gmail.com>
