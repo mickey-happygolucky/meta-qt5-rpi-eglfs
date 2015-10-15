@@ -8,7 +8,7 @@ branch: master
 revision: HEAD
 
 URI: git://github.com/openembedded/meta-oe.git
-branch: master
+branch: fido
 revision: HEAD
 
 If you want to use opencv depends on meta-oe.
@@ -19,7 +19,7 @@ In local.conf
 BBMASK = "meta-qt5-rpi-eglfs/recipes-support/opencv"
 ```
 
-If you fail bitbake with userland.bb, 
+If you fail bitbake with userland.bb,
 Could you try to use vc-graphics-hardfp instead of userland as follows:
 
 In local.conf

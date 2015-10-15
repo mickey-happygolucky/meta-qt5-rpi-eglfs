@@ -1,6 +1,6 @@
-PACKAGECONFIG += " qt opengl"
+PACKAGECONFIG += " qt opengl-es"
 PACKAGECONFIG[qt] = "-DWITH_QT=ON,-DWITH_QT=OFF,qtbase,"
-PACKAGECONFIG[opengl] = "-DWITH_OPENGL=ON,-DWITH_QT=OFF,,"
+PACKAGECONFIG[opengl-es] = "-DWITH_OPENGLES=ON,-DWITH_OPENGLES=OFF,virtual/libgles2,"
 
 # Ugly hack to work around undefined OE_QMAKE_PATH_EXTERNAL_HOST_BINS variable
 # and possibly missing qmake binary (qtbase-native can be removed from sysroot
